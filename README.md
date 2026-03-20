@@ -1,6 +1,7 @@
 # GitHub Organization Access Report
 
 A Spring Boot REST API that shows **which users have access to which repositories** in a GitHub organization.
+https://docs.google.com/document/d/1OW8pRilO-yFwK2AwloNdQapO8xe_1RFrJA7X4Osb5r4/edit?tab=t.0
 
 ---
 
