@@ -54,41 +54,10 @@ Authorization: Bearer <your_token>
 
 Returns a full access report for a GitHub organization.
 
-**Query Parameters:**
-| Parameter | Required | Description |
-|-----------|----------|-------------|
-| `org`     | Yes      | GitHub organization name |
 
 **Example Request:**
 ```bash
 curl "http://localhost:8080/api/v1/report?org=facebook"
-```
-
-**Example Response:**
-```json
-{
-  "organization": "facebook",
-  "totalRepos": 3,
-  "totalUsers": 2,
-  "userAccessMap": {
-    "john_doe": [
-      {
-        "repoName": "backend-service",
-        "repoUrl": "https://github.com/facebook/backend-service",
-        "role": "admin",
-        "private": true
-      }
-    ],
-    "jane_smith": [
-      {
-        "repoName": "frontend-app",
-        "repoUrl": "https://github.com/facebook/frontend-app",
-        "role": "write",
-        "private": false
-      }
-    ]
-  }
-}
 ```
 
 ---
